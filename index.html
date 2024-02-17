@@ -23,8 +23,8 @@
       }
     </style>
   </head>
-  <body>
-    <!-- Nav bar -->
+  <body class="container mx-auto">
+    <!-- Nav bar started -->
     <div class="container mx-auto py-3">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
@@ -55,10 +55,14 @@
               <li><a>Search</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost .font-raleway text-4xl font-extrabold">P-Ticket</a>
+          <a class="btn btn-ghost .font-raleway text-4xl font-extrabold"
+            >P-Ticket</a
+          >
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 .font-raleway text-xl font-medium text-[#030712B3]">
+          <ul
+            class="menu menu-horizontal px-1 .font-raleway text-xl font-medium text-[#030712B3]"
+          >
             <li><a>Home</a></li>
             <li><a>About</a></li>
             <li><a>Destination</a></li>
@@ -66,11 +70,143 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn bg-[#1DD1001A] border-[#1DD10066] text-[#1DD100] .font-raleway font-bold text-xl"
+          <a
+            class="btn bg-[#1DD1001A] border-[#1DD10066] text-[#1DD100] .font-raleway font-bold text-xl"
             >Button <img src="./images/bus-icon.png" alt=""
           /></a>
         </div>
       </div>
     </div>
+    <!-- Nav bar end -->
+
+    <!-- Carousel started -->
+    <div class="container mx-auto py-2">
+      <div class="carousel w-full relative">
+        <div
+          class="flex flex-col absolute text-center justify-center items-center top-[14px] left-[39px] lg:top-[120px] lg:left-[430px] gap-8 px-auto"
+        >
+          <h2
+            class=".font-raleway text-6xl font-extrabold text-white leading-[5.5rem]"
+          >
+            End-to-End Travel with <br />
+            <span
+              class=".font-raleway text-6xl font-extrabold text-[#1DD100] leading-[5.5rem]"
+              >P Paribahan</span
+            >
+          </h2>
+          <p class=".font-inter text-lg font-normal text-white text-center">
+            Yes, you can run unit tests and view the results directly within the
+            app. The
+            <br />
+            integrated testing features allow for a streamlined .
+          </p>
+          <button
+            class="btn .font-raleway bg-[#1DD100] text-black text-xl font-bold border-none hover:bg-[#8fdb84]"
+          >
+            Buy Tickets
+          </button>
+        </div>
+        <div id="item1" class="carousel-item w-full">
+          <img
+            class="w-full bg-gradient-to-r from-[#030712] to-[#030712] rounded-badge"
+            src="./images/banner.png"
+            class="w-full"
+          />
+        </div>
+      </div>
+      <div
+        class="container mx-auto flex gap-10 items-center justify-center absolute top-[762px]"
+      >
+        <div
+          class="flex gap-4 bg-white rounded-3xl shadow-xl items-center justify-center p-5 border-b-4 border-[#1DD100] w-[308px]"
+        >
+          <div class="border-2 border-dashed border-gray-400 p-2">
+            <img class="w-[48px] h-[48px]" src="./images/people.png" alt="" />
+          </div>
+          <div>
+            <h3 class="text-black .font-inter text-4xl font-bold">500K+</h3>
+            <p class="text-[#03071299] .font-inter font-normal text-lg pt-2">
+              Registered users
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex gap-4 bg-white rounded-3xl shadow-xl p-5 border-b-4 border-[#1DD100] w-[308px]"
+        >
+          <div class="border-2 border-dashed border-gray-400 p-2">
+            <img
+              class="w-[48px] h-[48px]"
+              src="./images/ticket-cupon.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3 class="text-black .font-inter text-4xl font-bold">1.7 lacks</h3>
+            <p class="text-[#03071299] .font-inter font-normal text-lg pt-2">
+              Tickets sold
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex gap-4 bg-white rounded-3xl shadow-xl p-5 border-b-4 border-[#1DD100] w-[308px]"
+        >
+          <div class="border-2 border-dashed border-gray-400 p-2">
+            <img class="w-[48px] h-[48px]" src="./images/stoppage.png" alt="" />
+          </div>
+
+          <div>
+            <h3 class="text-black .font-inter text-4xl font-bold">80K+</h3>
+            <p class="text-[#03071299] .font-inter font-normal text-lg pt-2">
+              Rental partners
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Coupon section started -->
+    <div class="container mx-auto my-24">
+      <h2 class=".font-raleway text-4xl text-center font-bold text-black">
+        Best offers for you
+      </h2>
+    </div>
+
+    <div class="container mx-auto flex justify-around">
+      <div class="flex bg-[#FFBF0F] py-5 px-8 items-center justify-center my-8 relative rounded-3xl">
+        <div class="border-r-2 border-dashed border-white text-center px-4">
+          <h3 class=".font-inter text-[40px] font-black text-left">15% OFF</h3>
+          <h5 class="text-left text-xl font-medium text-black">on your next purchase</h5>
+          <p class="text-left text-lg font-medium text-[#03071280]">use by January 2024</p>
+        </div>
+        <div class="text-center px-5">
+          <h3 class="text-left .font-inter text-3xl font-bold">New15</h3>
+          <p class="text-left text-lg font-medium text-[#03071280]">Coupon Code</p>
+        </div>
+        <div class="absolute flex flex-col justify-between gap-[5.5rem] left-[248px]">
+          <div class="w-10 h-10 rounded-full bg-white shadow-2xl"></div>
+          <div class="w-10 h-10 rounded-full bg-white shadow-2xl"></div>
+        </div>
+      </div>
+      <div>
+        <div class="flex bg-[#F78C9C] py-5 px-8 items-center justify-center my-8 relative rounded-3xl">
+        <div class="border-r-2 border-dashed border-white text-center px-4">
+          <h3 class=".font-inter text-[40px] font-black text-left">15% OFF</h3>
+          <h5 class="text-left text-xl font-medium text-black">on your next purchase</h5>
+          <p class="text-left text-lg font-medium text-[#03071280]">use by January 2024</p>
+        </div>
+        <div class="text-center px-5">
+          <h3 class="text-left .font-inter text-3xl font-bold">New15</h3>
+          <p class="text-left text-lg font-medium text-[#03071280]">Coupon Code</p>
+        </div>
+        <div class="absolute flex flex-col justify-between gap-[5.5rem] left-[248px]">
+          <div class="w-10 h-10 rounded-full bg-white shadow-2xl"></div>
+          <div class="w-10 h-10 rounded-full bg-white shadow-2xl"></div>
+        </div>
+      </div>
+    </div>
+      </div>
+    <!-- Coupon Section End -->
+    
   </body>
 </html>
