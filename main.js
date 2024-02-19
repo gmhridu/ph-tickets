@@ -22,7 +22,7 @@ for (let seat of chooseSeats) {
     const seatNumberContainer = document.getElementById("seat-number");
     const seatClassUpdate = document.getElementById("seat-Class");
     const countPriceContainer = document.getElementById("count-price");
-    const getDiv = document.getElementById("updated-ticket-info");
+    const updateSeatInfo = document.getElementById("updated-ticket-info");
 
     const seatNumberText = document.createElement("p");
     seatNumberText.innerText = seats;
@@ -33,19 +33,16 @@ for (let seat of chooseSeats) {
     const priceUpdate = document.createElement("p");
     priceUpdate.innerText = priceConverted;
 
-    seatNumberContainer.innerText = "";
-    seatNumberContainer.appendChild(seatNumberText);
+    
+    const clonedSeatNumber = seatNumberText.cloneNode(true);
+    const clonedSeatClass = seatClassP.cloneNode(true);
+    const clonedPriceUpdate = priceUpdate.cloneNode(true);
 
-    seatClassUpdate.innerText = "";
-    seatClassUpdate.appendChild(seatClassP);
-
-    countPriceContainer.innerText = "";
-    countPriceContainer.appendChild(priceUpdate);
-
-
+    seatNumberContainer.appendChild(clonedSeatNumber);
+    seatClassUpdate.appendChild(clonedSeatClass);
+    countPriceContainer.appendChild(clonedPriceUpdate);
 
     setInnerText("cart-count", count);
-
     setBgColor(seat);
   });
 }
