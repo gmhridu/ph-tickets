@@ -28,14 +28,6 @@
         border-top: 1px dashed #1dd100;
         transform: rotate(90deg);
       }
-
-      li{
-      display: flex;
-      justify-content: space-around;
-      margin-top: 0.75rem; /* Equivalent to my-3 in Tailwind CSS */
-      margin-bottom: 0.75rem; /* Equivalent to my-3 in Tailwind CSS */
-
-      }
     </style>
   </head>
   <body class="container mx-auto">
@@ -289,16 +281,15 @@
                 </p>
               </div>
               <div class="flex lg:pr-4">
-                <button id="seats-available" 
-                  class="btn bg-[#1DD1001A] border-[#1DD10066] text-[#1DD100] font-raleway font-bold text-xl"
+                <p class="btn bg-[#1DD1001A] border-[#1DD10066] text-[#1DD100] font-raleway font-bold text-xl"
                 >
                   <img
                     class="border-2 border-dashed border-gray-400 md:w-[24px]"
                     src="./images/seat-green.png"
                     alt=""
                   />
-                  40 Seats left
-                </button>
+                  <span id="seats-remaining">40</span> Seats left
+                </p>
               </div>
             </div>
           </div>
@@ -513,7 +504,7 @@
                       D2
                     </li>
                     <li
-                      class="bg-[#1DD100] text-white w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
+                      class="bg-[#F7F8F8] text-white w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       D3
                     </li>
@@ -530,7 +521,7 @@
                   <ul class="flex gap-5">
                     <li class="flex items-center justify-center gap-6">E</li>
                     <li
-                      class="bg-[#1DD100] text-white w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
+                      class="bg-[#F7F8F8] text-white w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       E1
                     </li>
@@ -711,17 +702,18 @@
               <div>
                 <img src="./images/line.png" alt="">
               </div>
-              <div class="flex justify-around my-3">
-                <p id="seat-number" class="font-inter text-base font-normal text-[#03071299] text-center">C2</p>
-                <p id="seat-Class" class="font-inter text-base font-normal text-[#03071299] text-center pl-10">Economy</p>
-                <p id="count-price" class="font-inter text-base font-normal text-[#03071299] text-center">0</p>
+
+              <div id="updated-ticket-info" class="flex flex-col px-3">
+                  <!-- <p id="seat-number" class="font-inter text-base font-normal text-[#03071299] text-center"></p>
+                  <p id="seat-Class" class="font-inter text-base font-normal text-[#03071299] text-center pl-10"></p>
+                  <p id="count-price" class="font-inter text-base font-normal text-[#03071299] text-center"></p> -->
               </div>
-              <div id="updated-ticket-info" class="flex justify-around my-3"></div>
-              <div class=" hidden flex justify-around mb-4">
+              
+              <!-- <div class=" hidden flex justify-around mb-4">
                 <h2 class="font-inter text-base font-normal text-[#03071299] text-center">C2</h2>
                 <h2 class="font-inter text-base font-normal text-[#03071299] text-center pl-10">Economy</h2>
                 <h2 class="font-inter text-base font-normal text-[#03071299] text-center">0</h2>
-              </div>
+              </div> -->
               <div class="flex items-center justify-center">
                 <img src="./images/line2.png" alt="">
               </div>
