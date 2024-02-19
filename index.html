@@ -704,16 +704,10 @@
               </div>
 
               <div id="updated-ticket-info" class="flex flex-col px-3">
-                  <!-- <p id="seat-number" class="font-inter text-base font-normal text-[#03071299] text-center"></p>
-                  <p id="seat-Class" class="font-inter text-base font-normal text-[#03071299] text-center pl-10"></p>
-                  <p id="count-price" class="font-inter text-base font-normal text-[#03071299] text-center"></p> -->
+                
               </div>
               
-              <!-- <div class=" hidden flex justify-around mb-4">
-                <h2 class="font-inter text-base font-normal text-[#03071299] text-center">C2</h2>
-                <h2 class="font-inter text-base font-normal text-[#03071299] text-center pl-10">Economy</h2>
-                <h2 class="font-inter text-base font-normal text-[#03071299] text-center">0</h2>
-              </div> -->
+              
               <div class="flex items-center justify-center">
                 <img src="./images/line2.png" alt="">
               </div>
@@ -722,18 +716,17 @@
                   <h3 class="font-inter text-base font-medium text-[#030712]">BDT <span id="total-price">0</span></h3>
                 </div>
                 <!-- discount  -->
-                <div class="flex justify-between px-8 my-3 hidden">
-                  <h3 class="font-inter text-base font-medium text-[#030712]">Discount</h3>
-                  <h3 class="font-inter text-base font-medium text-[#030712]">BDT <span>0</span></h3>
+                <div id="discount-shown" class="flex justify-between px-8 my-3">
+                 
                 </div>
                 <div>
                   <div class="flex items-center justify-center relative">
-                    <input class="p-5 w-full max-w-[370px] rounded-xl outline-none" type="text" placeholder="Have any coupon?">
-                    <button class="btn absolute right-8 font-inter text-base font-semibold bg-[#1DD100] border-[#1DD100] hover:bg-[#8ed982] text-white">Apply</button>
+                    <input id="input-field" class="p-5 w-full max-w-[370px] rounded-xl outline-none" type="text" placeholder="Have any coupon?">
+                    <button id="apply-btn" class="btn absolute right-8 font-inter text-base font-semibold bg-[#1DD100] border-[#1DD100] hover:bg-[#8ed982] text-white">Apply</button>
                   </div>
                   <!-- grand total -->
                   <div class="flex justify-between px-8 my-3">
-                  <h3 class="font-inter text-base font-medium text-[#030712]">Total Price</h3>
+                  <h3 class="font-inter text-base font-medium text-[#030712]">Grand Total</h3>
                   <h3 class="font-inter text-base font-medium text-[#030712]">BDT <span id="total-cost">0</span></h3>
                 </div>
                 </div>
