@@ -90,14 +90,14 @@
     <div class="container mx-auto py-2">
       <div class="carousel w-full relative">
         <div
-          class="flex flex-col mx-auto absolute text-center justify-center items-center top-[14px] left-[39px] lg:top-[123px] lg:left-[390px] gap-8 px-auto"
+          class="flex flex-col mx-auto absolute text-center justify-center items-center md:top-[30px] md:left-[138px] lg:top-[123px] lg:left-[390px] gap-8 px-auto"
         >
           <h2
-            class="font-raleway text-6xl font-extrabold text-white leading-[5.5rem]"
+            class="font-raleway text-5xl lg:text-6xl font-extrabold text-white md:leading-[3.8rem]  lg:leading-[5.5rem]"
           >
             End-to-End Travel with <br />
             <span
-              class="font-raleway text-6xl font-extrabold text-[#1DD100] leading-[5.5rem]"
+              class="font-raleway text-5xl lg:text-6xl font-extrabold text-[#1DD100] md:leading-[3.8rem] lg:leading-[5.5rem]"
               >P Paribahan</span
             >
           </h2>
@@ -107,7 +107,7 @@
             <br />
             integrated testing features allow for a streamlined .
           </p>
-          <button
+          <button id="buy-tickets"
             class="btn font-raleway bg-[#1DD100] text-black text-xl font-bold border-none hover:bg-[#8fdb84]"
           >
             Buy Tickets
@@ -117,12 +117,12 @@
           <img
             class="w-full bg-gradient-to-r from-[#030712] to-[#030712] rounded-[40px]"
             src="./images/banner.png"
-            class="w-full"
+            class="w-[75%]"
           />
         </div>
       </div>
       <div
-        class="container mx-auto flex gap-10 items-center justify-center absolute top-[730px]"
+        class="container mx-auto flex gap-10 items-center justify-center absolute md:top-[483px] lg:top-[730px]"
       >
         <div
           class="flex gap-4 bg-white rounded-3xl shadow-xl items-center justify-center p-5 border-b-4 border-[#1DD100] w-[308px]"
@@ -246,7 +246,7 @@
     <!-- Coupon Section End -->
 
     <!-- Buy tickets section -->
-    <div class="container mx-auto border-t-2 border-t-[#1DD100] rounded-3xl bg-[#F7F8F8] my-10 relative mb-20"
+    <div class="container mx-auto border-t-2 border-t-[#1DD100] rounded-3xl bg-[#F7F8F8] my-10 relative pb-28 md:px-2"
     >
       <div class="text-center">
         <h2 class="font-raleway text-[40px] font-bold mt-28 mb-3">
@@ -262,7 +262,7 @@
       <div
         class="mx-auto flex items-center justify-between bg-white shadow max-w-[1170px] mb-24 py-12 rounded-3xl"
       >
-        <div class="flex flex-[.8] flex-col gap-3">
+        <div class="flex md:flex-[.7] lg:flex-[.8] flex-col gap-3">
           <div class="flex gap-4 my-5 mx-8">
             <div>
               <img
@@ -271,7 +271,7 @@
                 alt=""
               />
             </div>
-            <div class="flex space-x-56">
+            <div class="flex md:space-x-16 lg:space-x-56">
               <div>
                 <h2 class="font-raleway text-3xl font-bold mb-1">
                   Greenline Paribahan
@@ -280,12 +280,12 @@
                   Coach-009-WEB ! AC_Business
                 </p>
               </div>
-              <div class="pr-4">
-                <button
+              <div class="flex lg:pr-4">
+                <button id="seats-available" 
                   class="btn bg-[#1DD1001A] border-[#1DD10066] text-[#1DD100] font-raleway font-bold text-xl"
                 >
                   <img
-                    class="border-2 border-dashed border-gray-400"
+                    class="border-2 border-dashed border-gray-400 md:w-[24px]"
                     src="./images/seat-green.png"
                     alt=""
                   />
@@ -295,7 +295,7 @@
             </div>
           </div>
           <div>
-          <div class="w-[808px] bg-[#F7F8F8] ml-6 rounded-3xl p-10">
+          <div class="lg:w-[808px] bg-[#F7F8F8] ml-6 rounded-3xl p-10">
             <div
               class="flex justify-between border-b-2 border-dashed border-gray-400 py-3"
             >
@@ -316,21 +316,21 @@
                 9:00 PM
               </p>
             </div>
-            <div class="flex gap-10 py-6 items-center justify-center">
-              <button class="btn bg-[#0307120D] border-[#0307120D] px-4">
+            <div class="flex md:gap-1 md:py-5 lg:gap-10 lg:py-6 items-center justify-center">
+              <button class="btn bg-[#0307120D] border-[#0307120D] lg:px-4">
                 Boarding Point - Laxmipur
               </button>
-              <button class="btn bg-[#0307120D] border-[#0307120D] px-4">
+              <button class="btn bg-[#0307120D] border-[#0307120D] lg:px-4">
                 Dropping Point - Bogura
               </button>
-              <button class="btn bg-[#0307120D] border-[#0307120D] px-4">
+              <button class="btn bg-[#0307120D] border-[#0307120D] lg:px-4">
                 Est. Time - 11 Hour
               </button>
             </div>
           </div>
         </div>
         </div>
-        <div class="flex-[.2]">
+        <div class="md:flex-[.3] lg:flex-[.2]">
             <div class="flex flex-col items-center justify-center">
               <div class="items-center">
                 <img
@@ -340,10 +340,12 @@
                 />
               </div>
               <div>
-                <h3 class="font-raleway font-bold text-center text-3xl">
-                  550 Taka
+              <h3 class="font-raleway font-bold text-center text-3xl">
+                  <span id="ticket-price" class="font-raleway font-bold text-center text-3xl">550</span>
+                  Taka
                 </h3>
-                <p class="font-raleway font-semibold text-2xl text-[#03071299]">
+                
+                <p class="font-raleway font-semibold text-2xl text-[#03071299] text-center">
                   Per Seat
                 </p>
               </div>
@@ -351,9 +353,9 @@
           </div>
         
 
-        <div class="hr absolute top-[529px] left-[879px]"></div>
+        <div class="hr absolute md:left-[577px] lg:top-[529px] lg:left-[879px]"></div>
         <div
-          class="absolute flex flex-col justify-between space-y-52 gap-[230px] left-[994px] top-[243px]"
+          class="absolute flex flex-col justify-between md:left-[691px] md:gap-[451px] lg:space-y-52 lg:gap-[230px] lg:left-[994px] lg:top-[243px]"
         >
           <div class="w-16 h-16 rounded-full bg-[#F7F8F8]"></div>
           <div class="w-16 h-16 rounded-full bg-[#F7F8F8]"></div>
@@ -361,8 +363,8 @@
       </div>
 
       <!-- select your seats -->
-      <div class="mx-auto bg-white max-w-[1170px] py-8 rounded-3xl">
-        <section class="flex justify-around">
+      <section id="seat-selection" class="mx-auto bg-white max-w-[1170px] py-8 rounded-3xl">
+        <div class="flex justify-around">
           <!-- left side -->
           <div class="p-5">
             <div class="border-b border-dashed border-[#03071233]">
@@ -389,7 +391,7 @@
                   src="./images/seat-green-filled.png"
                   alt=""
                 />
-                <p class="font-inter text-lg font-medium text-[#60a755]">
+                <p class="font-inter text-lg font-medium text-[#1DD100]">
                   Selected
                 </p>
               </div>
@@ -402,29 +404,31 @@
                   <img src="./images/wheel.png" alt="" />
                 </div>
               </div>
+              <!-- seat available -->
               <div class="container mx-auto flex flex-col gap-4 items-center justify-center space-x-5">
+
                 <!-- 1st row -->
                 <div></div>
                 <div>
                   <ul class="flex gap-5">
                     <li class="flex items-center justify-center gap-6">A</li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       A1
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       A2
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       A3
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       A4
                     </li>
@@ -437,22 +441,22 @@
                   <ul class="flex gap-5">
                     <li class="flex items-center justify-center gap-6">B</li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       B1
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       B2
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       B3
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       B4
                     </li>
@@ -464,22 +468,22 @@
                   <ul class="flex gap-5">
                     <li class="flex items-center justify-center gap-6">C</li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       C1
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       C2
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       C3
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       C4
                     </li>
@@ -491,22 +495,22 @@
                   <ul class="flex gap-5">
                     <li class="flex items-center justify-center gap-6">D</li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       D1
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       D2
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#1DD100] text-white w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       D3
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       D4
                     </li>
@@ -518,22 +522,22 @@
                   <ul class="flex gap-5">
                     <li class="flex items-center justify-center gap-6">E</li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#1DD100] text-white w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       E1
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       E2
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       E3
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       E4
                     </li>
@@ -545,22 +549,22 @@
                  <ul class="flex gap-5">
                     <li class="flex items-center justify-center gap-6">F</li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       F1
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       F2
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       F3
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       F4
                     </li>
@@ -571,23 +575,23 @@
                 <div>
                   <ul class="flex gap-5">
                     <li class="flex items-center justify-center gap-6">G</li>
-                    <liG
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                    <li
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       G1
-                    </liG>
+                    </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#1DD100] text-white w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       G2
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       G3
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       G4
                     </li>
@@ -599,22 +603,22 @@
                   <ul class="flex gap-5">
                     <li class="flex items-center justify-center gap-6">H</li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       H1
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       H2
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       H3
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       H4
                     </li>
@@ -626,22 +630,22 @@
                   <ul class="flex gap-5">
                     <li class="flex items-center justify-center gap-6">I</li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       I1
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       I2
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       I3
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       I4
                     </li>
@@ -653,22 +657,22 @@
                  <ul class="flex gap-5">
                     <li class="flex items-center justify-center gap-6">J</li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       J1
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
-                      A2
+                      J2
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       J3
                     </li>
                     <li
-                      class="bg-[#0307121A] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       J4
                     </li>
@@ -692,7 +696,7 @@
           <div class="bg-[#F7F8F8] max-w-[433px] mx-auto mt-4 rounded-xl">
             <div class="flex flex-col py-4">
               <div class="flex justify-around my-3">
-                <h2 class="font-inter text-base font-medium text-[#030712]">Seat <span class="bg-[#1DD100] text-white w-4 h-3 rounded-md px-2">2</span></h2>
+                <h2 class="font-inter text-base font-medium text-[#030712]">Seat <span id="cart-count" class="bg-[#1DD100] text-white w-4 h-3 rounded-md px-2">0</span></h2>
                 <h2 class="font-inter text-base font-medium text-[#030712]">Class</h2>
                 <h2 class="font-inter text-base font-medium text-[#030712]">Price</h2>
               </div>
@@ -702,24 +706,24 @@
               <div class="flex justify-around my-3">
                 <h2 class="font-inter text-base font-normal text-[#03071299] text-center">C2</h2>
                 <h2 class="font-inter text-base font-normal text-[#03071299] text-center pl-10">Economy</h2>
-                <h2 class="font-inter text-base font-normal text-[#03071299] text-center">550</h2>
+                <h2 class="font-inter text-base font-normal text-[#03071299] text-center">0</h2>
               </div>
               <div class="flex justify-around mb-4">
                 <h2 class="font-inter text-base font-normal text-[#03071299] text-center">C2</h2>
                 <h2 class="font-inter text-base font-normal text-[#03071299] text-center pl-10">Economy</h2>
-                <h2 class="font-inter text-base font-normal text-[#03071299] text-center">550</h2>
+                <h2 class="font-inter text-base font-normal text-[#03071299] text-center">0</h2>
               </div>
               <div class="flex items-center justify-center">
                 <img src="./images/line2.png" alt="">
               </div>
                 <div class="flex justify-between px-8 my-3">
                   <h3 class="font-inter text-base font-medium text-[#030712]">Total Price</h3>
-                  <h3 class="font-inter text-base font-medium text-[#030712]">BDT 1100</h3>
+                  <h3 class="font-inter text-base font-medium text-[#030712]"><span class="font-inter text-base font-medium text-[#030712]">BDT</span> 0</h3>
                 </div>
                 <!-- discount  -->
                 <div class="flex justify-between px-8 my-3 hidden">
                   <h3 class="font-inter text-base font-medium text-[#030712]">Discount</h3>
-                  <h3 class="font-inter text-base font-medium text-[#030712]">BDT 0</h3>
+                  <h3 class="font-inter text-base font-medium text-[#030712]"><span class="font-inter text-base font-medium text-[#030712]">BDT</span> 0</h3>
                 </div>
                 <div>
                   <div class="flex items-center justify-center relative">
@@ -729,7 +733,7 @@
                   <!-- grand total -->
                   <div class="flex justify-between px-8 my-3">
                   <h3 class="font-inter text-base font-medium text-[#030712]">Total Price</h3>
-                  <h3 class="font-inter text-base font-medium text-[#030712]">BDT 1100</h3>
+                  <h3 class="font-inter text-base font-medium text-[#030712]"><span class="font-inter text-base font-medium text-[#030712]">BDT</span> 0</h3>
                 </div>
                 </div>
             </div>
@@ -761,7 +765,8 @@
               </div>
               
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+   <script src="./main.js"></script>
   </body>
 </html>
