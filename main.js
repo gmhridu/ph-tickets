@@ -5,7 +5,6 @@ buyTickets.addEventListener("click", function () {
   seatSelection.scrollIntoView({ behavior: "smooth" });
 });
 
-
 const chooseSeats = document.querySelectorAll(".choose-seats");
 let count = 0;
 
@@ -16,10 +15,37 @@ for (let seat of chooseSeats) {
     const ticketPrice = document.getElementById("ticket-price");
     const price = ticketPrice.innerText;
     const priceConverted = parseInt(price);
-    console.log(priceConverted);
+    const seats = seat.innerText;
+    const seatClass = document.getElementById("seat-Class");
+    const seatClassText = seatClass.innerText;
 
-    // Update the cart count
+    const seatNumberContainer = document.getElementById("seat-number");
+    const seatClassUpdate = document.getElementById("seat-Class");
+    const countPriceContainer = document.getElementById("count-price");
+    const getDiv = document.getElementById("updated-ticket-info");
+
+    const seatNumberText = document.createElement("p");
+    seatNumberText.innerText = seats;
+
+    const seatClassP = document.createElement("p");
+    seatClassP.innerText = seatClassText;
+
+    const priceUpdate = document.createElement("p");
+    priceUpdate.innerText = priceConverted;
+
+    seatNumberContainer.innerText = "";
+    seatNumberContainer.appendChild(seatNumberText);
+
+    seatClassUpdate.innerText = "";
+    seatClassUpdate.appendChild(seatClassP);
+
+    countPriceContainer.innerText = "";
+    countPriceContainer.appendChild(priceUpdate);
+
+
+
     setInnerText("cart-count", count);
+
     setBgColor(seat);
   });
 }
@@ -28,6 +54,6 @@ function setInnerText(event, value) {
   document.getElementById(event).innerText = value;
 }
 
-function setBgColor(elements) {
-   elements.classList.toggle("bg-lime-400");
+function setBgColor(element) {
+  element.classList.toggle("bg-lime-400");
 }
