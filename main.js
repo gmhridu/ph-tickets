@@ -1,12 +1,11 @@
 const buyTickets = document.getElementById("buy-tickets");
-const ticketPrice = document.getElementById("ticket-price");
+const ticketTotalPrice = document.getElementById("total-price");
+const totalCost = document.getElementById("total-cost");
 const ticketList = document.getElementById("updated-ticket-info");
 const chooseSeats = document.querySelectorAll(".choose-seats");
-const remainingSeatsElement = parseInt(
-  document.getElementById("seats-remaining").innerHTML
-);
-let selectedSeats = 0;
+const remainingSeatsElement = document.getElementById("seats-remaining");
 const totalSeats = chooseSeats.length;
+let selectedSeats = 0;
 
 // Scroll to seat selection
 buyTickets.addEventListener("click", function () {
@@ -59,7 +58,8 @@ function updateTicketInfo() {
 
 function countPrice() {
   const totalPrice = 550 * selectedSeats;
-  countPriceContainer.innerText = totalPrice;
+  ticketTotalPrice.innerText = totalPrice;
+  totalCost.innerText = totalPrice;
 }
 
 function updateRemainingSeats() {
