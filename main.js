@@ -15,7 +15,7 @@ buyTickets.addEventListener("click", function () {
 
 for (let seat of chooseSeats) {
   seat.addEventListener("click", function (event) {
-    if (seat.classList.contains("bg-lime-400")) {
+    if (seat.classList.contains("bg-lime-500")) {
       selectedSeats -= 1;
     } else {
       selectedSeats += 1;
@@ -27,6 +27,7 @@ for (let seat of chooseSeats) {
     countPrice();
     updateRemainingSeats();
     grandTotal();
+    showScreen();
   });
 }
 
@@ -124,7 +125,7 @@ function setInnerText(event, value) {
 }
 
 function setBgColor(element) {
-  element.classList.toggle("bg-lime-400");
+  element.classList.toggle("bg-lime-500");
 }
 
 function countPrice() {
@@ -148,4 +149,34 @@ function grandTotal() {
 
   totalCost.innerText = grandTotalPrice;
 }
+
+ 
+function submitInput() {
+  const submitInputValues = document.querySelectorAll(".submit-input");
+  const submissionId = document.getElementById("confirmation-screen");
+  const removeHome = document.getElementById("remove-home");
+
+  submissionId.classList.remove("hidden");
+  removeHome.style.display = "none";
+
+  for (const input of submitInputValues) {
+    input.value = "";
+  }
+}
+
+function continueHome() {
+  const submissionId = document.getElementById("confirmation-screen");
+  const removeHome = document.getElementById("remove-home");
+
+  submissionId.classList.add("hidden");
+  removeHome.style.display = "block";
+}
+
+const submitBtn = document.getElementById("submit-btn");
+submitBtn.addEventListener("click", submitInput);
+
+const continueBtn = document.getElementById("continue-home");
+continueBtn.addEventListener("click", continueHome);
+
+
 

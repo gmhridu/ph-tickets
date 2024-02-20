@@ -30,7 +30,24 @@
       }
     </style>
   </head>
-  <body class="container mx-auto">
+  <body>
+    <!-- submit confirmation -->
+     <section id="confirmation-screen" class="hidden container mx-auto">
+    <div class="bg-white shadow-xl h-screen flex flex-col items-center justify-center rounded-2xl gap-5">
+      <img class="w-20" src="./images/success.png" alt="">
+      <h2 class="font-inter text-2xl font-bold text-[#27AE60] text-center">SUCCESS</h2>
+      <p class="font-inter text-xl font-medium text-[#4A4A4A] text-center">Thank you for Booking Our Bus Seats.
+        <br>
+      We are working hard to find the best service and deals for you.
+        <br>
+        <span class="font-inter text-xl font-light text-[#4A4A4A]">
+          Shortly you will find a confirmation in your email.
+        </span>
+      </p>
+      <button id="continue-home" class="btn w-72 text-white bg-[#27AE60] hover:bg-[#81dfa8] font-inter text-xl font-medium rounded-3xl">Continue</button>
+    </div>
+   </section>
+    <div id="remove-home" class="container mx-auto">
     <!-- Nav bar started -->
     <div class="container mx-auto py-3">
       <div class="navbar bg-base-100">
@@ -90,18 +107,18 @@
     <div class="container mx-auto py-2">
       <div class="carousel w-full relative">
         <div
-          class="flex flex-col mx-auto absolute text-center justify-center items-center md:top-[30px] md:left-[138px] lg:top-[123px] lg:left-[390px] gap-8 px-auto"
+          class="flex flex-col mx-auto absolute text-center justify-center items-center md:top-[30px] md:left-[138px] lg:top-[123px] lg:left-[390px] md:gap-8 px-auto"
         >
           <h2
-            class="font-raleway text-5xl lg:text-6xl font-extrabold text-white md:leading-[3.8rem]  lg:leading-[5.5rem]"
+            class="font-raleway text-2xl md:text-5xl lg:text-6xl font-extrabold text-white md:leading-[3.8rem]  lg:leading-[5.5rem]"
           >
             End-to-End Travel with <br />
             <span
-              class="font-raleway text-5xl lg:text-6xl font-extrabold text-[#1DD100] md:leading-[3.8rem] lg:leading-[5.5rem]"
+              class="font-raleway text-2xl md:text-5xl lg:text-6xl font-extrabold text-[#1DD100] md:leading-[3.8rem] lg:leading-[5.5rem]"
               >P Paribahan</span
             >
           </h2>
-          <p class="font-inter text-lg font-normal text-white text-center">
+          <p class="font-inter text-base md:text-lg font-normal text-white text-center leading-7">
             Yes, you can run unit tests and view the results directly within the
             app. The
             <br />
@@ -121,8 +138,10 @@
           />
         </div>
       </div>
+
+      <!-- Users Registered -->
       <div
-        class="container mx-auto flex gap-10 items-center justify-center absolute md:top-[483px] lg:top-[730px]"
+        class="container mx-auto flex flex-col mt-3 md:flex-row gap-10 items-center justify-center absolute md:top-[483px] lg:top-[730px]"
       >
         <div
           class="flex gap-4 bg-white rounded-3xl shadow-xl items-center justify-center p-5 border-b-4 border-[#1DD100] w-[308px]"
@@ -179,7 +198,7 @@
       </h2>
     </div>
 
-    <div class="container mx-auto flex justify-around">
+    <div class="container mx-auto flex flex-col md:flex-row justify-around">
       <!-- coupon 1 -->
       <div
         class="flex bg-[#FFBF0F] py-5 px-8 my-10 items-center justify-center relative rounded-3xl"
@@ -504,7 +523,7 @@
                       D2
                     </li>
                     <li
-                      class="bg-[#F7F8F8] text-white w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
+                      class="bg-[#F7F8F8]  w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       D3
                     </li>
@@ -521,7 +540,7 @@
                   <ul class="flex gap-5">
                     <li class="flex items-center justify-center gap-6">E</li>
                     <li
-                      class="bg-[#F7F8F8] text-white w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
+                      class="bg-[#F7F8F8]  w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       E1
                     </li>
@@ -580,7 +599,7 @@
                       G1
                     </li>
                     <li
-                      class="bg-[#1DD100] text-white w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
+                      class="bg-[#F7F8F8] w-[112px] flex items-center justify-center px-10 py-4 rounded-xl choose-seats"
                     >
                       G2
                     </li>
@@ -736,22 +755,22 @@
               <div class="flex flex-col my-6">
                 <div>
                  <h2 class="font-inter text-base font-semibold text-[#030712] mb-3">Passenger Name*</h2>
-                 <input class="p-5 w-full max-w-[430px] rounded-xl outline-none border border-[#0307121A]" type="text" placeholder="Enter your name">
+                 <input class="p-5 w-full max-w-[430px] rounded-xl outline-none border border-[#0307121A] submit-input" type="text" placeholder="Enter your name">
                 </div>
               </div>
               
               <div class="flex flex-col my-6">
                 <div>
                  <h2 class="font-inter text-base font-semibold text-[#030712] mb-3">Phone Number*</h2>
-                 <input class="p-5 w-full max-w-[430px] rounded-xl outline-none border border-[#0307121A]" type="number" placeholder="Enter your phone number">
+                 <input class="p-5 w-full max-w-[430px] rounded-xl outline-none border border-[#0307121A] submit-input" type="number" placeholder="Enter your phone number">
                 </div>
               </div>
               <div class="flex flex-col my-6">
                 <div>
                  <h2 class="font-inter text-base font-semibold text-[#030712] mb-3">Email ID</h2>
-                 <input class="p-5 w-full max-w-[430px] rounded-xl outline-none border border-[#0307121A] mb-6" type="text" placeholder="Enter your email id">
+                 <input class="p-5 w-full max-w-[430px] rounded-xl outline-none border border-[#0307121A] mb-6 submit-input" type="text" placeholder="Enter your email id">
                 </div>
-                <button class="btn w-full  font-raleway text-xl font-extrabold text-white bg-[#1DD100] hover:bg-[#8ed982]">Next</button>
+                <button id="submit-btn" class="btn w-full  font-raleway text-xl font-extrabold text-white bg-[#1DD100] hover:bg-[#8ed982]">Next</button>
                 <ul class="flex justify-around my-5 underline underline-[#03071299]">
                   <li class="font-inter text-base font-normal text-[#03071299]"><a href="#">Terms and Conditions</a></li>
                   <li class="font-inter text-base font-normal text-[#03071299]"><a href="#">Cancellation Policy</a></li>
@@ -760,6 +779,7 @@
         </div>
       </div>
     </section>
+   </div>
    <script src="./main.js" type="module"></script>
   </body>
 </html>

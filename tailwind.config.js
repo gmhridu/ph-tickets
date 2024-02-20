@@ -12,7 +12,12 @@ module.exports = {
       'lg': '1440px',
       // => @media (min-width: 1440px) { ... }
     },
-    extend: {},
+    extend: {
+      screens: {
+        'xs': '370px',
+        'tab': '770px',
+      },
+    },
   },
   container: {
     center: true,
